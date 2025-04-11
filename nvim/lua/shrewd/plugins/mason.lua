@@ -6,7 +6,17 @@ return {
   config = function()
     require('mason').setup({})
     require('mason-lspconfig').setup({
-      ensure_installed = {'lua_ls', 'pyright', 'ts_ls', 'omnisharp'},
+      ensure_installed = {
+        'lua_ls',
+        'pyright',
+        'ts_ls',
+        'omnisharp',
+        'csharp_ls',
+        'clangd',
+        'cssls',
+        'tailwindcss',
+        'emmet_language_server',
+      },
     })
   end,
 }
