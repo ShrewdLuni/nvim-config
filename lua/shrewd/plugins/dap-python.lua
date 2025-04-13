@@ -1,6 +1,7 @@
 return {
   "mfussenegger/nvim-dap-python",
   ft = "python",
+  event = "VeryLazy",
   dependencies = {
     "mfussenegger/nvim-dap",
     "jay-babu/mason-nvim-dap.nvim",

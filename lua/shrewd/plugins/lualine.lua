@@ -1,11 +1,14 @@
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
+  event = { "BufReadPre", "BufNewFile" },
+  priority = 1000,
   config = function()
     require('lualine').setup({
       options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = "tokyonight",
+        -- theme = require('lualine_cosmicink'),
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
         disabled_filetypes = {

@@ -1,6 +1,7 @@
 return {
   'Wansmer/treesj',
-  keys = { '<space>m', '<space>j', '<space>ss' },
+  event="VeryLazy",
+  keys = { '<leader>M', '<space>j', '<space>ss' },
   dependencies = { 'nvim-treesitter/nvim-treesitter' }, -- if you install parsers with `nvim-treesitter`
   config = function()
     require('treesj').setup({

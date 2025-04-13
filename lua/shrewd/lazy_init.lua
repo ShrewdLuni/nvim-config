@@ -16,5 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = "shrewd.plugins",
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false},
+  change_detection = { notify = false }
 })
