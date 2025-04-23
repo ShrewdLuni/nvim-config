@@ -2,7 +2,7 @@ return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   event = { "BufReadPre", "BufNewFile" },
-  priority = 1000,
+  priority = 1001,
   config = function()
     require('lualine').setup({
       options = {

@@ -3,9 +3,11 @@ vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+local tabsize = 2
+
+vim.opt.tabstop = tabsize
+vim.opt.softtabstop = tabsize
+vim.opt.shiftwidth = tabsize
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
@@ -32,4 +34,7 @@ vim.env.LANG = "en_US.UTF-8"
 vim.env.LC_ALL = "en_US.UTF-8"
 
 vim.opt.showmode = false
---vim.opt.colorcolumn = "120"
+
+-- vim.opt.colorcolumn = "80"
+
+vim.opt.cmdheight = 0
