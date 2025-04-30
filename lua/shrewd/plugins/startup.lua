@@ -5,6 +5,7 @@ return {
     "nvim-lua/plenary.nvim",
   },
   config = function()
-    require("startup").setup({theme = "evil"})
+    -- local theme = require("shrewd.startup_shrewd")
+    require("startup").setup(require("shrewd.startup_shrewd"))
   end,
 }
