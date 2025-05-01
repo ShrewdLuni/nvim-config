@@ -1,7 +1,7 @@
 return {
   'nvim-telescope/telescope.nvim',
   tag = '0.1.8',
-  dependencies = { 
+  dependencies = {
     'nvim-lua/plenary.nvim',
     'nvim-telescope/telescope-file-browser.nvim',
   },
@@ -12,5 +12,6 @@ return {
     vim.keymap.set('n', '<leader>ps', function()
       builtin.grep_string({ search = vim.fn.input("Grep > ") })
     end)
+    vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope find files' })
   end,
 }
