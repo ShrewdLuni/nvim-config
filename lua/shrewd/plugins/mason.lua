@@ -18,6 +18,9 @@ return {
         'cssls',
         'tailwindcss',
         'emmet_language_server',
+        'dockerls',
+        'docker_compose_language_service',
+        'sqlls',
       },
     })
   end,

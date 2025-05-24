@@ -1,6 +1,7 @@
 return {
   "folke/tokyonight.nvim",
   -- event = { "BufReadPre", "BufNewFile" },
+  event = "VeryLazy",
   priority = 999,
   opts = {},
   config = function()

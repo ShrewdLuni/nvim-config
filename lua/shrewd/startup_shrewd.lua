@@ -18,7 +18,9 @@ local settings = {
         fold_section = false,
         title = "Quote",
         margin = 5,
-        content = require("startup.functions").quote(),
+        content = function ()
+            return require("startup.functions").quote()
+        end,
         highlight = "StartupQuote",
         default_color = "",
         oldfiles_amount = 0,
@@ -50,6 +52,8 @@ local settings = {
         empty_lines_between_mappings = true,
         disable_statuslines = true,
         paddings = { 2, 2, 2, 2, 2, 2, 2 },
+        cursor_line_delay = 0,
+        safe_mode = true,
     },
     colors = {
         background = "#1f2227",

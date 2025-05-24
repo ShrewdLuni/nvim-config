@@ -25,13 +25,16 @@ return {
                 },
             },
         })
+    -- require('lspconfig').omnisharp.setup({ cmd = { "D:/Software/NvimOmnisharp/OmniSharp.exe", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) } })
         require('lspconfig').pyright.setup({ disableOrganizeImports = true, capabilities = Capabilities})
         require('lspconfig').ts_ls.setup({ capabilities = Capabilities })
-        -- require('lspconfig').omnisharp.setup({ cmd = { "D:/Software/NvimOmnisharp/OmniSharp.exe", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) } })
         require('lspconfig').csharp_ls.setup({ capabilities = Capabilities})
         require('lspconfig').clangd.setup({})
         require('lspconfig').tailwindcss.setup({ capabilities = Capabilities })
         require('lspconfig').cssls.setup({ capabilities = Capabilities })
         require('lspconfig').emmet_language_server.setup({ capabilities = Capabilities })
+        require('lspconfig').dockerls.setup({ })
+        require('lspconfig').docker_compose_language_service.setup({ })
+        require('lspconfig').sqlls.setup({ })
     end,
 }

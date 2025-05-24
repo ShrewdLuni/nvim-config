@@ -35,6 +35,14 @@ vim.env.LC_ALL = "en_US.UTF-8"
 
 vim.opt.showmode = false
 
+vim.opt.cmdheight = 0
+
+vim.opt.ignorecase = true
+
+vim.opt.backspace = {"start", "eol", "indent"}
+
 -- vim.opt.colorcolumn = "80"
 
-vim.opt.cmdheight = 0
+-- vim.opt.title = true
+
+-- window split
