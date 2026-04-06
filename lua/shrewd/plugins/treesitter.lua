@@ -3,10 +3,9 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   build = ':TSUpdate',
   config = function()
-    require('nvim-treesitter.install').compilers = { "zig" }
     require('nvim-treesitter.install').prefer_git = false
     require('nvim-treesitter.configs').setup({
-      ensure_installed = {},
+      ensure_installed = { "python", "javascript" },
       sync_install = false,
       auto_install = true,
       highlight = {
@@ -14,8 +13,8 @@ return {
         additional_vim_regex_highlighting = false,
       },
       indent = { enable = true },
-      -- autotag = { enable = true },
       autopairs = { enable = true },
+      -- autotag = { enable = true },
     })
   end,
 }

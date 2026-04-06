@@ -1,6 +1,7 @@
 return {
   "windwp/nvim-ts-autotag",
   event = { "BufReadPre", "BufNewFile" },
+  dependencies = { "nvim-treesitter/nvim-treesitter" },
   config = function()
     require('nvim-ts-autotag').setup({
       opts = {
@@ -9,11 +10,8 @@ return {
         enable_close_on_slash = false, -- Auto close on trailing </
       },
       per_filetype = {
-        html = {
-          enable_close = false,     -- Disable auto-closing for HTML files
-        },
+        html = { enable_close = false, }     -- Disable auto-closing for HTML files
       },
     })
   end,
 }
-

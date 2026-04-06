@@ -4,6 +4,7 @@ return {
   dependencies = {
     'williamboman/mason-lspconfig.nvim',
   },
+  priority = 9999,
   config = function()
     require('mason').setup({})
     require('mason-lspconfig').setup({
@@ -12,8 +13,8 @@ return {
         'lua_ls',
         'pyright',
         'ts_ls',
-        'omnisharp',
-        'csharp_ls',
+        -- 'omnisharp',
+        -- 'csharp_ls',
         'clangd',
         'cssls',
         'tailwindcss',

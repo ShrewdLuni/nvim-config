@@ -2,7 +2,6 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     config = function()
-
         local colors = {
           BG = '#16181b', -- Dark background
           FG = '#c5c4c4', -- Light foreground for contrast
